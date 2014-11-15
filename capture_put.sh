@@ -15,7 +15,8 @@
 #   BUCKET_NAME ... S3 bucket name
 #     e.g. kyanny-public
 #   HTML_TEMPLATE ... Template string of message sent to hipchat
-#     e.g. <img src="%s"/>
+#     e.g. [%s] <a href="%s">[edit]</a> <a href="%s">[delete]</a> <a href="%s">[about]</a><br>
+#          <a href="%s"><img src="%s"/></a>
 #   JOB_URL ... Jenkins Job URL
 #   ABOUT_URL ... About URL
 #
