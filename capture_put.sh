@@ -6,7 +6,7 @@
 #   URL ... New Relic Embedded Chart URL
 #     e.g. https://rpm.newrelic.com/public/charts/XXXXXXXXXXX
 #   APPNAME ... Application Name
-#     e.g. api-rails
+#     e.g. my-application
 #   CHARTS_URL ... New Relic Embedded Charts Tools page
 #     e.g. https://rpm.newrelic.com/accounts/XXXXXX/embedded_charts
 #
