@@ -33,5 +33,5 @@ os.system('phantomjs --ssl-protocol=any app.js')
 os.system('s3cmd put %s s3://%s' % (file_name, bucket_name))
 
 public_url = 'https://s3.amazonaws.com/%s/%s' % (bucket_name, file_name)
-os.system("curl -d token=%s -d channel='%s' -d text=%s https://slack.com/api/chat.postMessage" % (slack_token, slack_channel, public_url))
-os.system("curl -d token=%s -d channel='%s' -d text=%s https://slack.com/api/chat.postMessage" % (slack_token, slack_channel, urllib.quote(job_url)))
+os.system("curl -s -d token=%s -d channel='%s' -d text=%s https://slack.com/api/chat.postMessage" % (slack_token, slack_channel, public_url))
+os.system("curl -s -d token=%s -d channel='%s' -d text=%s https://slack.com/api/chat.postMessage" % (slack_token, slack_channel, urllib.quote(job_url)))
