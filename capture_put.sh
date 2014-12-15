@@ -6,7 +6,7 @@
 #   URL ... New Relic Embedded Chart URL
 #     e.g. https://rpm.newrelic.com/public/charts/XXXXXXXXXXX
 #   APPNAME ... Application Name
-#     e.g. api-rails
+#     e.g. my-application
 #   CHARTS_URL ... New Relic Embedded Charts Tools page
 #     e.g. https://rpm.newrelic.com/accounts/XXXXXX/embedded_charts
 #
@@ -15,7 +15,8 @@
 #   BUCKET_NAME ... S3 bucket name
 #     e.g. kyanny-public
 #   HTML_TEMPLATE ... Template string of message sent to hipchat
-#     e.g. <img src="%s"/>
+#     e.g. [%s] <a href="%s">[edit]</a> <a href="%s">[delete]</a> <a href="%s">[about]</a><br>
+#          <a href="%s"><img src="%s"/></a>
 #   JOB_URL ... Jenkins Job URL
 #   ABOUT_URL ... About URL
 #
