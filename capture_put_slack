@@ -28,7 +28,7 @@ f = open('app.js', 'w')
 f.write(script)
 f.close()
 
-os.system('phantomjs app.js')
+os.system('phantomjs --ssl-protocol=any app.js')
 
 os.system('s3cmd put %s s3://%s' % (file_name, bucket_name))
 
