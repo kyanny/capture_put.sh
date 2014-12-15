@@ -35,8 +35,8 @@ os.system('s3cmd put %s s3://%s' % (file_name, bucket_name))
 
 public_url = 'https://s3.amazonaws.com/%s/%s' % (bucket_name, file_name)
 payload = json.dumps({'text': public_url})
-os.system("curl -X POST --data-urlencode 'payload=%s' %s" % (payload, slack_incoming_webhook_url))
+os.system("curl -s -X POST --data-urlencode 'payload=%s' %s" % (payload, slack_incoming_webhook_url))
 
 if job_url:
     payload = json.dumps({'text': job_url})
-    os.system("curl -X POST --data-urlencode 'payload=%s' %s" % (payload, slack_incoming_webhook_url))
+    os.system("curl -s -X POST --data-urlencode 'payload=%s' %s" % (payload, slack_incoming_webhook_url))
